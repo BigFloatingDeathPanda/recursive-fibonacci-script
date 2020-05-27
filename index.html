@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generic HTML Title</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+
+    <script>
+        const fibonacci = function(nthItem) {
+            if (nthItem < 1) {
+                return "OOPS";
+            }
+
+            if (nthItem == 1 || nthItem == 2) {
+                return 1;
+            };
+
+            return (fibonacci(nthItem - 1) + fibonacci(nthItem - 2));
+
+        }
+
+        console.log(fibonacci(25));
+    </script>
+
+</body>
+</html>
